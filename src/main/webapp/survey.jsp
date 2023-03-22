@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,7 @@
 <label>Updates:</label>
 <span>${user.wantsUpdates}</span><br>
 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <c:if test="${user.wantsUpdates == 'Yes'}">
     <label>Contact Via:</label>
     <span>${user.contactVia}</span>
